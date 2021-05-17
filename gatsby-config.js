@@ -1,15 +1,13 @@
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Starter Blog`,
+    title: `Flik Lab/Dev-log`,
     author: {
-      name: `Kyle Mathews`,
-      summary: `who lives and works in San Francisco building useful things.`,
+      name: `Flik Jeong`,
+      summary: `FE Developer at Volla. Love Creative Things`,
     },
-    description: `A starter blog demonstrating what Gatsby can do.`,
-    siteUrl: `https://gatsbystarterblogsource.gatsbyjs.io/`,
-    social: {
-      twitter: `kylemathews`,
-    },
+    description: `만드는 것은 무엇이든 좋아합니다.`,
+    siteUrl: `https://github.com/fliklab`,
+    social: {},
   },
   plugins: [
     `gatsby-plugin-image`,

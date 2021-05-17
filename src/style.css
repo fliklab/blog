@@ -32,8 +32,12 @@
     "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   --fontFamily-serif: "Merriweather", "Georgia", Cambria, "Times New Roman",
     Times, serif;
-  --font-body: var(--fontFamily-serif);
-  --font-heading: var(--fontFamily-sans);
+  --fontFamily-sans-kr: "Noto Sans KR", "Noto Sans CJK KR", -apple-system,
+    BlinkMacSystemFont, "Helvetica Neue", "Apple SD Gothic Neo", "Malgun Gothic",
+    "맑은 고딕", 나눔고딕, "Nanum Gothic", arial, 돋움, Dotum, Tahoma, Geneva,
+    sans-serif;
+  --font-body: var(--fontFamily-sans-kr);
+  --font-heading: var(--fontFamily-sans-kr);
   --fontWeight-normal: 400;
   --fontWeight-medium: 500;
   --fontWeight-semibold: 600;
