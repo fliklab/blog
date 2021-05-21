@@ -1,9 +1,9 @@
 module.exports = {
   siteMetadata: {
-    title: `Flik Lab/Dev-log`,
+    title: `flog`,
     author: {
-      name: `Flik Jeong`,
-      summary: `FE Developer at Volla. Love Creative Things`,
+      name: `Flik`,
+      summary: `Front End Developer. Love Creative Things`,
     },
     description: `만드는 것은 무엇이든 좋아합니다.`,
     siteUrl: `https://github.com/fliklab`,
