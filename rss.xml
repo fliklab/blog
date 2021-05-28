@@ -1,4 +1,147 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[flog]]></title><description><![CDATA[만드는 것은 무엇이든 좋아합니다.]]></description><link>https://github.com/fliklab</link><generator>GatsbyJS</generator><lastBuildDate>Fri, 21 May 2021 01:33:45 GMT</lastBuildDate><item><title><![CDATA[개발블로그 만들기]]></title><description><![CDATA[개츠비를 활용하여 개발 블로그를 만들고자 한다.
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[flog]]></title><description><![CDATA[만드는 것은 무엇이든 좋아합니다.]]></description><link>https://github.com/fliklab</link><generator>GatsbyJS</generator><lastBuildDate>Fri, 28 May 2021 02:15:06 GMT</lastBuildDate><item><title><![CDATA[맥에서 키 바인딩하기]]></title><description><![CDATA[reference : https://ss64.com/osx/syntax-keybindings.html ~/Library/KeyBindings/DefaultKeyBinding.dict…]]></description><link>https://github.com/fliklab/맥에서 키 바인딩하기/</link><guid isPermaLink="false">https://github.com/fliklab/맥에서 키 바인딩하기/</guid><pubDate>Sun, 23 May 2021 02:03:43 GMT</pubDate><content:encoded>&lt;p&gt;reference : &lt;a href=&quot;https://ss64.com/osx/syntax-keybindings.html&quot;&gt;https://ss64.com/osx/syntax-keybindings.html&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;~/Library/KeyBindings/DefaultKeyBinding.dict
+를 바꾸면(없는경우 생성) 해당 로그인한 사용자에 한해서 바인딩이 저장된다.&lt;/p&gt;
+&lt;p&gt;/System/Library/KeyBindings/DefaultKeyBinding.dict
+는 전체 유저에 대해서이다.&lt;/p&gt;
+&lt;p&gt;예시&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;/* DefaultKeyBinding.dict */
+/*
+    Key Modifiers
+    ^ : Ctrl
+    $ : Shift
+    ~ : Option (Alt)
+    @ : Command (Apple)
+    # : Numeric Keypad
+
+    Non-Printable Key Codes
+
+    Up Arrow:     \UF700        Backspace:    \U0008        F1:           \UF704
+    Down Arrow:   \UF701        Tab:          \U0009        F2:           \UF705
+    Left Arrow:   \UF702        Escape:       \U001B        F3:           \UF706
+    Right Arrow:  \UF703        Enter:        \U000A        ...
+    Insert:       \UF727        Page Up:      \UF72C
+    Delete:       \UF728        Page Down:    \UF72D
+    Home:         \UF729        Print Screen: \UF72E
+    End:          \UF72B        Scroll Lock:  \UF72F
+    Break:        \UF732        Pause:        \UF730
+    SysReq:       \UF731        Menu:         \UF735
+    Help:         \UF746
+    */
+
+{
+/* Remap Home / End keys to the start/end of paragraph (or line) */
+
+  &amp;quot;\UF729&amp;quot;  = moveToBeginningOfParagraph:; // Home
+/* or &amp;quot;\UF729&amp;quot;  = &amp;quot;moveToBeginningOfLine:&amp;quot;;  */
+
+  &amp;quot;\UF72B&amp;quot;  = moveToEndOfParagraph:;       // End
+/* or &amp;quot;\UF72B&amp;quot;  = &amp;quot;moveToEndOfLine:&amp;quot;;  */
+
+  &amp;quot;$\UF729&amp;quot; = moveToBeginningOfParagraphAndModifySelection:; // Shift + Home
+/* or &amp;quot;$\UF729&amp;quot; = &amp;quot;moveToBeginningOfLineAndModifySelection:&amp;quot;;  */
+
+  &amp;quot;$\UF72B&amp;quot; = moveToEndOfParagraphAndModifySelection:;       // Shift + End
+/* or &amp;quot;$\UF72B&amp;quot; = &amp;quot;moveToEndOfLineAndModifySelection:&amp;quot;;  */
+
+/* Remap keys for Start/End of document  */
+  &amp;quot;^\UF729&amp;quot; = moveToBeginningOfDocument:; // Ctrl + Home
+  &amp;quot;^,&amp;quot; = moveToBeginningOfDocument:;      // Ctrl +,
+
+  &amp;quot;^\UF72B&amp;quot; = moveToEndOfDocument:;   // Ctrl + End
+  &amp;quot;^.&amp;quot; = moveToEndOfDocument:;        // Ctrl +.
+
+  &amp;quot;^$\UF729&amp;quot; = moveToBeginningOfDocumentAndModifySelection:; // Ctrl + Shift + Home
+  &amp;quot;^$\UF72B&amp;quot; = moveToEndOfDocumentAndModifySelection:;       // Ctrl + Shift + End
+
+/* Remap keys for switching the case of the current word */
+  &amp;quot;~-&amp;quot; = lowercaseWord:;
+  &amp;quot;~=&amp;quot; = uppercaseWord:;
+  &amp;quot;~.&amp;quot; = capitalizeWord:;
+}&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</content:encoded></item><item><title><![CDATA[단축키 익히기]]></title><description><![CDATA[…]]></description><link>https://github.com/fliklab/단축키 익히기/</link><guid isPermaLink="false">https://github.com/fliklab/단축키 익히기/</guid><pubDate>Sun, 23 May 2021 02:03:43 GMT</pubDate><content:encoded>&lt;p&gt;단축키를 익혀서 생산성을 향상시키자&lt;/p&gt;
+&lt;h2&gt;단축키를 익혀야 하는 이유&lt;/h2&gt;
+&lt;p&gt;대부분의 프로그램이 기본적인 사용법만으로도 대부분의 기능이 사용 가능한 경우도 많다. 어쩌면 그래서 새로운 단축키를 익힐 필요성을 까먹기도 하는 것 같다.
+하지만 단축키를 익히면 많은 것이 달라진다. 자주 사용되는 기능의 작업시간을 단축시키고, 특히 자주 사용되는데에도 불구하고 기능이 숨어있는 등의 경우 단축키를 통해 작업효율이 많이향상된다. (복사붙여넣기를 할때 컨트롤C, 컨트롤V 를 하지 않는다고 생각하면 끔찍하게 불편할 것을 상상해볼수있다.)&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;작업 속도가 빨라진다.&lt;/li&gt;
+&lt;li&gt;빨라질 뿐만 아니라 손이 편해진다.&lt;/li&gt;
+&lt;li&gt;결과적으로 더 많은 일을 원활하게 처리할 수 있게 되면서 필요한 일을 더 많이 처리하게 됨.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;단축키를익히지 않는 이유&lt;/h2&gt;
+&lt;p&gt;사실 단축키를 익히지 않는 것은 단축키를 익히면 좋다는걸 몰라서 그런것은 아닐것이다. 대부분의 경우는 다움과같은 이유로 단축키를 안쓰게 된다.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;이미 기존 사용법에 익숙해서 새로운것을 사용하는것이 더 비효율적이다.&lt;/li&gt;
+&lt;li&gt;새로운 방법을 배워서 익히는 것 또한 시간과 노력이 필요하다.&lt;/li&gt;
+&lt;li&gt;배우려고 해도, 어떤 것을 배워야 하는지도 모른다.&lt;/li&gt;
+&lt;li&gt;단축키 좀 익힌다고 얼마나 효율적일지 확실히 와닿지 않는다.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;그래서 이런식으로 해보기로 한다.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;사용하는 기능을 중 새로운 단축키로 대체해본다.&lt;/li&gt;
+&lt;li&gt;한번에 너무 많은 단축키를 익히지 않는다.&lt;/li&gt;
+&lt;li&gt;가능하면 호환성이 높은 단축키부터 익힌다.&lt;/li&gt;
+&lt;li&gt;새로운 단축키를 찾는데 너무 많은 시간을 쓰지 않는다.&lt;/li&gt;
+&lt;li&gt;새로운 단축키가 익숙해질 때쯤 새로운 단축키를 추가로 학습한다.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;어떤 단축키를 익힐것인가&lt;/h2&gt;
+&lt;p&gt;가장 많이 사용하는 VS Code를 기준으로 하되, 다른 프로그램에서도 동일하게 사용이 가능한 것을 좀더 우선으로 하였다.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;자주 사용되는 키를 우선으로 익힌다.&lt;/li&gt;
+&lt;li&gt;많은 프로그램에서 호한되는 키를 우선으로 익힌다.&lt;/li&gt;
+&lt;li&gt;점차적으로 대체 가능한 키부터 익힌다.&lt;/li&gt;
+&lt;li&gt;키보드 맵핑의 노력이 많이 들지 않고, 여러 키보드에서 사용가능한것 우선&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;방향키&lt;/h2&gt;
+&lt;p&gt;방향키를 익히는 것을 먼저 해보기로 한다. 미니 배열의 키보드에서도 가장 먼저 없어지는 것이 방향키이고, 다른 키로 대체 가능하기 때문이다.&lt;/p&gt;
+&lt;p&gt;아래는 Emac 기준의 방향키인데 VS Code를 비롯하여 생각보다 많은 프로그램에서 키가 먹히는걸 확인했다.&lt;/p&gt;
+&lt;p&gt;에디터에서 커서를 이동하는 한칸씩 이동하는 방법이다.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code class=&quot;language-text&quot;&gt;Ctrl&lt;/code&gt;+&lt;code class=&quot;language-text&quot;&gt;F&lt;/code&gt; : 앞=오른쪽으로(&lt;strong&gt;F&lt;/strong&gt;ront)&lt;/li&gt;
+&lt;li&gt;&lt;code class=&quot;language-text&quot;&gt;Ctrl&lt;/code&gt;+&lt;code class=&quot;language-text&quot;&gt;B&lt;/code&gt; : 뒤=왼쪽으로(&lt;strong&gt;B&lt;/strong&gt;ack)&lt;/li&gt;
+&lt;li&gt;&lt;code class=&quot;language-text&quot;&gt;Ctrl&lt;/code&gt;+&lt;code class=&quot;language-text&quot;&gt;P&lt;/code&gt; : 위(U&lt;strong&gt;P&lt;/strong&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;code class=&quot;language-text&quot;&gt;Ctrl&lt;/code&gt;+&lt;code class=&quot;language-text&quot;&gt;N&lt;/code&gt; : 아래(Dow&lt;strong&gt;N&lt;/strong&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;한번에 많이 이동할때는 Ctrl을 Opt로 바꾸면 된다.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code class=&quot;language-text&quot;&gt;Opt&lt;/code&gt;+&lt;code class=&quot;language-text&quot;&gt;F&lt;/code&gt; : 한 단어 앞=오른쪽으로(&lt;strong&gt;F&lt;/strong&gt;ront)&lt;/li&gt;
+&lt;li&gt;&lt;code class=&quot;language-text&quot;&gt;Opt&lt;/code&gt;+&lt;code class=&quot;language-text&quot;&gt;B&lt;/code&gt; : 한 단어 뒤=왼쪽으로(&lt;strong&gt;B&lt;/strong&gt;ack)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;줄의 맨앞/뒤로 이동한다. Fn+ 방향키와 같다.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Ctrl A : 그 줄의 맨앞으로&lt;/li&gt;
+&lt;li&gt;Ctrl E : 줄 맨 끝으로&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;지우는 것도 알아보자.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Ctrl+D delete left&lt;/li&gt;
+&lt;li&gt;Ctrl+H deleft right&lt;/li&gt;
+&lt;li&gt;Ctrl+K 커서가 있는 줄의 커서 뒷부분 모두 지움.&lt;/li&gt;
+&lt;li&gt;Ctrl+Shift+ K 한줄 모두 지움.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;선택하는것은 shift추가하면 된다? 아니다. 이게 없는게 문제다.&lt;/p&gt;
+&lt;p&gt;그리고 이걸 쓰고 있는데…&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Ctrl Shift A : 그 줄의 맨앞까지 선택&lt;/li&gt;
+&lt;li&gt;Ctrl Shift E : 줄 맨 끝까지 선택&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;{
+“key”: “ctrl+shift+left”,
+“command”: “editor.action.smartSelect.shrink”,
+“when”: “editorTextFocus”
+}
+{
+“key”: “ctrl+shift+right”,
+“command”: “editor.action.smartSelect.expand”,
+“when”: “editorTextFocus”
+}&lt;/p&gt;
+&lt;p&gt;Extentsion&lt;/p&gt;
+&lt;p&gt;Braket Selector를 설치 후 아래의 단축키 사용&lt;/p&gt;
+&lt;p&gt;alt + a = 브라켓 사이를 모두 선택&lt;/p&gt;
+&lt;p&gt;그리고 유용하다고 생각한것
+{
+“key”: “shift+cmd+.”,
+“command”: “breadcrumbs.focusAndSelect”,
+“when”: “breadcrumbsPossible”
+}&lt;/p&gt;</content:encoded></item><item><title><![CDATA[개발블로그 만들기]]></title><description><![CDATA[개츠비를 활용하여 개발 블로그를 만들고자 한다.
 blog를 위한 가장 기본 테마인 gatsby-starter-blog를 사용한다. gatsby-starter-blog…]]></description><link>https://github.com/fliklab/개발블로그 만들기/</link><guid isPermaLink="false">https://github.com/fliklab/개발블로그 만들기/</guid><pubDate>Mon, 17 May 2021 22:40:32 GMT</pubDate><content:encoded>&lt;p&gt;개츠비를 활용하여 개발 블로그를 만들고자 한다.
 blog를 위한 가장 기본 테마인 &lt;a href=&quot;https://www.gatsbyjs.com/starters/gatsbyjs/gatsby-starter-blog/&quot;&gt;gatsby-starter-blog&lt;/a&gt;를 사용한다.&lt;/p&gt;
 &lt;h2&gt;gatsby-starter-blog의 장/단점&lt;/h2&gt;
