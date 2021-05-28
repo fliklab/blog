@@ -9,7 +9,7 @@ module.exports = {
     siteUrl: `https://github.com/fliklab`,
     social: {},
   },
-  pathPrefix: "/blog",
+  pathPrefix: "",
   plugins: [
     `gatsby-plugin-image`,
     {
