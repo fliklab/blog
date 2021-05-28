@@ -6,7 +6,7 @@ module.exports = {
       summary: `Front End Developer. Love Creative Things`,
     },
     description: `만드는 것은 무엇이든 좋아합니다.`,
-    siteUrl: `https://github.com/fliklab`,
+    siteUrl: `https://blog.randomflik.com`,
     social: {},
   },
   pathPrefix: "",

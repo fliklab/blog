@@ -1,11 +1,11 @@
 {
-  "name": "gatsby-starter-blog",
+  "name": "fliklab-blog",
   "private": true,
-  "description": "A starter for a blog powered by Gatsby and Markdown",
+  "description": "dev blog",
   "version": "0.1.0",
-  "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+  "author": "Flik Jeong <jsh852@gmail.com>",
   "bugs": {
-    "url": "https://github.com/gatsbyjs/gatsby/issues"
+    "url": "`https://blog.randomflik.com`"
   },
   "dependencies": {
     "gatsby": "^3.4.1",
@@ -36,15 +36,14 @@
     "gh-pages": "^3.1.0",
     "prettier": "2.2.1"
   },
-  "homepage": "https://github.com/gatsbyjs/gatsby-starter-blog#readme",
+  "homepage": "https://blog.randomflik.com",
   "keywords": [
     "gatsby"
   ],
-  "license": "0BSD",
   "main": "n/a",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/gatsbyjs/gatsby-starter-blog.git"
+    "url": "git+https://github.com/fliklab/blog.git"
   },
   "scripts": {
     "build": "gatsby build",
