@@ -1,0 +1,2 @@
+(self.webpackChunkfliklab_blog=self.webpackChunkfliklab_blog||[]).push([[883],{9616:function(t,e,l){"use strict";l.r(e);var a=l(7294),n=l(7198),u=l(3751);e.default=function(t){var e=t.data,l=t.location,o=e.site.siteMetadata.title;return a.createElement(n.Z,{location:l,title:o},a.createElement(u.Z,{title:"404: Not Found"}),a.createElement("h1",null,"404: Not Found"),a.createElement("p",null,"You just hit a route that doesn't exist... the sadness."),a.createElement("p",null,"페이지를 찾을수가 없어요"))}}}]);
+//# sourceMappingURL=component---src-pages-404-js-70b4c09dfff5242fc123.js.map

@@ -1,63 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[flog]]></title><description><![CDATA[만드는 것은 무엇이든 좋아합니다.]]></description><link>https://github.com/fliklab</link><generator>GatsbyJS</generator><lastBuildDate>Fri, 28 May 2021 02:15:06 GMT</lastBuildDate><item><title><![CDATA[맥에서 키 바인딩하기]]></title><description><![CDATA[reference : https://ss64.com/osx/syntax-keybindings.html ~/Library/KeyBindings/DefaultKeyBinding.dict…]]></description><link>https://github.com/fliklab/맥에서 키 바인딩하기/</link><guid isPermaLink="false">https://github.com/fliklab/맥에서 키 바인딩하기/</guid><pubDate>Sun, 23 May 2021 02:03:43 GMT</pubDate><content:encoded>&lt;p&gt;reference : &lt;a href=&quot;https://ss64.com/osx/syntax-keybindings.html&quot;&gt;https://ss64.com/osx/syntax-keybindings.html&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;~/Library/KeyBindings/DefaultKeyBinding.dict
-를 바꾸면(없는경우 생성) 해당 로그인한 사용자에 한해서 바인딩이 저장된다.&lt;/p&gt;
-&lt;p&gt;/System/Library/KeyBindings/DefaultKeyBinding.dict
-는 전체 유저에 대해서이다.&lt;/p&gt;
-&lt;p&gt;예시&lt;/p&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;/* DefaultKeyBinding.dict */
-/*
-    Key Modifiers
-    ^ : Ctrl
-    $ : Shift
-    ~ : Option (Alt)
-    @ : Command (Apple)
-    # : Numeric Keypad
-
-    Non-Printable Key Codes
-
-    Up Arrow:     \UF700        Backspace:    \U0008        F1:           \UF704
-    Down Arrow:   \UF701        Tab:          \U0009        F2:           \UF705
-    Left Arrow:   \UF702        Escape:       \U001B        F3:           \UF706
-    Right Arrow:  \UF703        Enter:        \U000A        ...
-    Insert:       \UF727        Page Up:      \UF72C
-    Delete:       \UF728        Page Down:    \UF72D
-    Home:         \UF729        Print Screen: \UF72E
-    End:          \UF72B        Scroll Lock:  \UF72F
-    Break:        \UF732        Pause:        \UF730
-    SysReq:       \UF731        Menu:         \UF735
-    Help:         \UF746
-    */
-
-{
-/* Remap Home / End keys to the start/end of paragraph (or line) */
-
-  &amp;quot;\UF729&amp;quot;  = moveToBeginningOfParagraph:; // Home
-/* or &amp;quot;\UF729&amp;quot;  = &amp;quot;moveToBeginningOfLine:&amp;quot;;  */
-
-  &amp;quot;\UF72B&amp;quot;  = moveToEndOfParagraph:;       // End
-/* or &amp;quot;\UF72B&amp;quot;  = &amp;quot;moveToEndOfLine:&amp;quot;;  */
-
-  &amp;quot;$\UF729&amp;quot; = moveToBeginningOfParagraphAndModifySelection:; // Shift + Home
-/* or &amp;quot;$\UF729&amp;quot; = &amp;quot;moveToBeginningOfLineAndModifySelection:&amp;quot;;  */
-
-  &amp;quot;$\UF72B&amp;quot; = moveToEndOfParagraphAndModifySelection:;       // Shift + End
-/* or &amp;quot;$\UF72B&amp;quot; = &amp;quot;moveToEndOfLineAndModifySelection:&amp;quot;;  */
-
-/* Remap keys for Start/End of document  */
-  &amp;quot;^\UF729&amp;quot; = moveToBeginningOfDocument:; // Ctrl + Home
-  &amp;quot;^,&amp;quot; = moveToBeginningOfDocument:;      // Ctrl +,
-
-  &amp;quot;^\UF72B&amp;quot; = moveToEndOfDocument:;   // Ctrl + End
-  &amp;quot;^.&amp;quot; = moveToEndOfDocument:;        // Ctrl +.
-
-  &amp;quot;^$\UF729&amp;quot; = moveToBeginningOfDocumentAndModifySelection:; // Ctrl + Shift + Home
-  &amp;quot;^$\UF72B&amp;quot; = moveToEndOfDocumentAndModifySelection:;       // Ctrl + Shift + End
-
-/* Remap keys for switching the case of the current word */
-  &amp;quot;~-&amp;quot; = lowercaseWord:;
-  &amp;quot;~=&amp;quot; = uppercaseWord:;
-  &amp;quot;~.&amp;quot; = capitalizeWord:;
-}&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</content:encoded></item><item><title><![CDATA[단축키 익히기]]></title><description><![CDATA[…]]></description><link>https://github.com/fliklab/단축키 익히기/</link><guid isPermaLink="false">https://github.com/fliklab/단축키 익히기/</guid><pubDate>Sun, 23 May 2021 02:03:43 GMT</pubDate><content:encoded>&lt;p&gt;단축키를 익혀서 생산성을 향상시키자&lt;/p&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[flog]]></title><description><![CDATA[만드는 것은 무엇이든 좋아합니다.]]></description><link>https://blog.randomflik.com</link><generator>GatsbyJS</generator><lastBuildDate>Fri, 28 May 2021 03:03:20 GMT</lastBuildDate><item><title><![CDATA[단축키 익히기]]></title><description><![CDATA[…]]></description><link>https://blog.randomflik.com/단축키 익히기/</link><guid isPermaLink="false">https://blog.randomflik.com/단축키 익히기/</guid><pubDate>Sun, 23 May 2021 02:03:43 GMT</pubDate><content:encoded>&lt;p&gt;단축키를 익혀서 생산성을 향상시키자&lt;/p&gt;
 &lt;h2&gt;단축키를 익혀야 하는 이유&lt;/h2&gt;
 &lt;p&gt;대부분의 프로그램이 기본적인 사용법만으로도 대부분의 기능이 사용 가능한 경우도 많다. 어쩌면 그래서 새로운 단축키를 익힐 필요성을 까먹기도 하는 것 같다.
 하지만 단축키를 익히면 많은 것이 달라진다. 자주 사용되는 기능의 작업시간을 단축시키고, 특히 자주 사용되는데에도 불구하고 기능이 숨어있는 등의 경우 단축키를 통해 작업효율이 많이향상된다. (복사붙여넣기를 할때 컨트롤C, 컨트롤V 를 하지 않는다고 생각하면 끔찍하게 불편할 것을 상상해볼수있다.)&lt;/p&gt;
@@ -141,8 +82,67 @@
 “key”: “shift+cmd+.”,
 “command”: “breadcrumbs.focusAndSelect”,
 “when”: “breadcrumbsPossible”
-}&lt;/p&gt;</content:encoded></item><item><title><![CDATA[개발블로그 만들기]]></title><description><![CDATA[개츠비를 활용하여 개발 블로그를 만들고자 한다.
-blog를 위한 가장 기본 테마인 gatsby-starter-blog를 사용한다. gatsby-starter-blog…]]></description><link>https://github.com/fliklab/개발블로그 만들기/</link><guid isPermaLink="false">https://github.com/fliklab/개발블로그 만들기/</guid><pubDate>Mon, 17 May 2021 22:40:32 GMT</pubDate><content:encoded>&lt;p&gt;개츠비를 활용하여 개발 블로그를 만들고자 한다.
+}&lt;/p&gt;</content:encoded></item><item><title><![CDATA[맥에서 키 바인딩하기]]></title><description><![CDATA[reference : https://ss64.com/osx/syntax-keybindings.html ~/Library/KeyBindings/DefaultKeyBinding.dict…]]></description><link>https://blog.randomflik.com/맥에서 키 바인딩하기/</link><guid isPermaLink="false">https://blog.randomflik.com/맥에서 키 바인딩하기/</guid><pubDate>Sun, 23 May 2021 02:03:43 GMT</pubDate><content:encoded>&lt;p&gt;reference : &lt;a href=&quot;https://ss64.com/osx/syntax-keybindings.html&quot;&gt;https://ss64.com/osx/syntax-keybindings.html&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;~/Library/KeyBindings/DefaultKeyBinding.dict
+를 바꾸면(없는경우 생성) 해당 로그인한 사용자에 한해서 바인딩이 저장된다.&lt;/p&gt;
+&lt;p&gt;/System/Library/KeyBindings/DefaultKeyBinding.dict
+는 전체 유저에 대해서이다.&lt;/p&gt;
+&lt;p&gt;예시&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;/* DefaultKeyBinding.dict */
+/*
+    Key Modifiers
+    ^ : Ctrl
+    $ : Shift
+    ~ : Option (Alt)
+    @ : Command (Apple)
+    # : Numeric Keypad
+
+    Non-Printable Key Codes
+
+    Up Arrow:     \UF700        Backspace:    \U0008        F1:           \UF704
+    Down Arrow:   \UF701        Tab:          \U0009        F2:           \UF705
+    Left Arrow:   \UF702        Escape:       \U001B        F3:           \UF706
+    Right Arrow:  \UF703        Enter:        \U000A        ...
+    Insert:       \UF727        Page Up:      \UF72C
+    Delete:       \UF728        Page Down:    \UF72D
+    Home:         \UF729        Print Screen: \UF72E
+    End:          \UF72B        Scroll Lock:  \UF72F
+    Break:        \UF732        Pause:        \UF730
+    SysReq:       \UF731        Menu:         \UF735
+    Help:         \UF746
+    */
+
+{
+/* Remap Home / End keys to the start/end of paragraph (or line) */
+
+  &amp;quot;\UF729&amp;quot;  = moveToBeginningOfParagraph:; // Home
+/* or &amp;quot;\UF729&amp;quot;  = &amp;quot;moveToBeginningOfLine:&amp;quot;;  */
+
+  &amp;quot;\UF72B&amp;quot;  = moveToEndOfParagraph:;       // End
+/* or &amp;quot;\UF72B&amp;quot;  = &amp;quot;moveToEndOfLine:&amp;quot;;  */
+
+  &amp;quot;$\UF729&amp;quot; = moveToBeginningOfParagraphAndModifySelection:; // Shift + Home
+/* or &amp;quot;$\UF729&amp;quot; = &amp;quot;moveToBeginningOfLineAndModifySelection:&amp;quot;;  */
+
+  &amp;quot;$\UF72B&amp;quot; = moveToEndOfParagraphAndModifySelection:;       // Shift + End
+/* or &amp;quot;$\UF72B&amp;quot; = &amp;quot;moveToEndOfLineAndModifySelection:&amp;quot;;  */
+
+/* Remap keys for Start/End of document  */
+  &amp;quot;^\UF729&amp;quot; = moveToBeginningOfDocument:; // Ctrl + Home
+  &amp;quot;^,&amp;quot; = moveToBeginningOfDocument:;      // Ctrl +,
+
+  &amp;quot;^\UF72B&amp;quot; = moveToEndOfDocument:;   // Ctrl + End
+  &amp;quot;^.&amp;quot; = moveToEndOfDocument:;        // Ctrl +.
+
+  &amp;quot;^$\UF729&amp;quot; = moveToBeginningOfDocumentAndModifySelection:; // Ctrl + Shift + Home
+  &amp;quot;^$\UF72B&amp;quot; = moveToEndOfDocumentAndModifySelection:;       // Ctrl + Shift + End
+
+/* Remap keys for switching the case of the current word */
+  &amp;quot;~-&amp;quot; = lowercaseWord:;
+  &amp;quot;~=&amp;quot; = uppercaseWord:;
+  &amp;quot;~.&amp;quot; = capitalizeWord:;
+}&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</content:encoded></item><item><title><![CDATA[개발블로그 만들기]]></title><description><![CDATA[개츠비를 활용하여 개발 블로그를 만들고자 한다.
+blog를 위한 가장 기본 테마인 gatsby-starter-blog를 사용한다. gatsby-starter-blog…]]></description><link>https://blog.randomflik.com/개발블로그 만들기/</link><guid isPermaLink="false">https://blog.randomflik.com/개발블로그 만들기/</guid><pubDate>Mon, 17 May 2021 22:40:32 GMT</pubDate><content:encoded>&lt;p&gt;개츠비를 활용하여 개발 블로그를 만들고자 한다.
 blog를 위한 가장 기본 테마인 &lt;a href=&quot;https://www.gatsbyjs.com/starters/gatsbyjs/gatsby-starter-blog/&quot;&gt;gatsby-starter-blog&lt;/a&gt;를 사용한다.&lt;/p&gt;
 &lt;h2&gt;gatsby-starter-blog의 장/단점&lt;/h2&gt;
 &lt;h4&gt;장점&lt;/h4&gt;
@@ -178,7 +178,7 @@ blog를 위한 가장 기본 테마인 &lt;a href=&quot;https://www.gatsbyjs.com
 &lt;li&gt;table of contents 작성&lt;/li&gt;
 &lt;li&gt;canvas, p5js, webgl등의 구현&lt;/li&gt;
 &lt;/ul&gt;</content:encoded></item><item><title><![CDATA[New Beginnings]]></title><description><![CDATA[Far far away, behind the word mountains, far from the countries Vokalia and
-Consonantia, there live the blind texts. Separated they live in…]]></description><link>https://github.com/fliklab/new-beginnings/</link><guid isPermaLink="false">https://github.com/fliklab/new-beginnings/</guid><pubDate>Thu, 28 May 2015 22:40:32 GMT</pubDate><content:encoded>&lt;p&gt;Far far away, behind the word mountains, far from the countries Vokalia and
+Consonantia, there live the blind texts. Separated they live in…]]></description><link>https://blog.randomflik.com/new-beginnings/</link><guid isPermaLink="false">https://blog.randomflik.com/new-beginnings/</guid><pubDate>Thu, 28 May 2015 22:40:32 GMT</pubDate><content:encoded>&lt;p&gt;Far far away, behind the word mountains, far from the countries Vokalia and
 Consonantia, there live the blind texts. Separated they live in Bookmarksgrove
 right at the coast of the Semantics, a large language ocean. A small river named
 Duden flows by their place and supplies it with the necessary regelialia.&lt;/p&gt;
@@ -271,12 +271,12 @@ to its own, safe country. But nothing the copy said could convince her and so it
 didn’t take long until a few insidious Copy Writers ambushed her, made her drunk
 with Longe and Parole and dragged her into their agency, where they abused her
 for their projects again and again.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[My Second Post!]]></title><description><![CDATA[Wow! I love blogging so much already. Did you know that “despite its name, salted duck eggs can also be made from
-chicken eggs, though the…]]></description><link>https://github.com/fliklab/my-second-post/</link><guid isPermaLink="false">https://github.com/fliklab/my-second-post/</guid><pubDate>Wed, 06 May 2015 23:46:37 GMT</pubDate><content:encoded>&lt;p&gt;Wow! I love blogging so much already.&lt;/p&gt;
+chicken eggs, though the…]]></description><link>https://blog.randomflik.com/my-second-post/</link><guid isPermaLink="false">https://blog.randomflik.com/my-second-post/</guid><pubDate>Wed, 06 May 2015 23:46:37 GMT</pubDate><content:encoded>&lt;p&gt;Wow! I love blogging so much already.&lt;/p&gt;
 &lt;p&gt;Did you know that “despite its name, salted duck eggs can also be made from
 chicken eggs, though the taste and texture will be somewhat different, and the
 egg yolk will be less rich.”?
 (&lt;a href=&quot;https://en.wikipedia.org/wiki/Salted_duck_egg&quot;&gt;Wikipedia Link&lt;/a&gt;)&lt;/p&gt;
-&lt;p&gt;Yeah, I didn’t either.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Hello World]]></title><description><![CDATA[This is my first post on my new fake blog! How exciting! I’m sure I’ll write a lot more interesting things in the future. Oh, and here’s a…]]></description><link>https://github.com/fliklab/hello-world/</link><guid isPermaLink="false">https://github.com/fliklab/hello-world/</guid><pubDate>Fri, 01 May 2015 22:12:03 GMT</pubDate><content:encoded>&lt;p&gt;This is my first post on my new fake blog! How exciting!&lt;/p&gt;
+&lt;p&gt;Yeah, I didn’t either.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Hello World]]></title><description><![CDATA[This is my first post on my new fake blog! How exciting! I’m sure I’ll write a lot more interesting things in the future. Oh, and here’s a…]]></description><link>https://blog.randomflik.com/hello-world/</link><guid isPermaLink="false">https://blog.randomflik.com/hello-world/</guid><pubDate>Fri, 01 May 2015 22:12:03 GMT</pubDate><content:encoded>&lt;p&gt;This is my first post on my new fake blog! How exciting!&lt;/p&gt;
 &lt;p&gt;I’m sure I’ll write a lot more interesting things in the future.&lt;/p&gt;
 &lt;p&gt;Oh, and here’s a great quote from this Wikipedia on
 &lt;a href=&quot;https://en.wikipedia.org/wiki/Salted_duck_egg&quot;&gt;salted duck eggs&lt;/a&gt;.&lt;/p&gt;
@@ -295,7 +295,7 @@ firm-textured, round yolk that is bright orange-red in color.&lt;/p&gt;
     &gt;
       &lt;a
     class=&quot;gatsby-resp-image-link&quot;
-    href=&quot;/blog/static/8058f3f26913fea3b6a89a73344fe94a/e1596/salty_egg.jpg&quot;
+    href=&quot;/static/8058f3f26913fea3b6a89a73344fe94a/e1596/salty_egg.jpg&quot;
     style=&quot;display: block&quot;
     target=&quot;_blank&quot;
     rel=&quot;noopener&quot;
@@ -308,13 +308,13 @@ firm-textured, round yolk that is bright orange-red in color.&lt;/p&gt;
         class=&quot;gatsby-resp-image-image&quot;
         alt=&quot;Chinese Salty Egg&quot;
         title=&quot;Chinese Salty Egg&quot;
-        src=&quot;/blog/static/8058f3f26913fea3b6a89a73344fe94a/828fb/salty_egg.jpg&quot;
-        srcset=&quot;/blog/static/8058f3f26913fea3b6a89a73344fe94a/ff44c/salty_egg.jpg 158w,
-/blog/static/8058f3f26913fea3b6a89a73344fe94a/a6688/salty_egg.jpg 315w,
-/blog/static/8058f3f26913fea3b6a89a73344fe94a/828fb/salty_egg.jpg 630w,
-/blog/static/8058f3f26913fea3b6a89a73344fe94a/0ede0/salty_egg.jpg 945w,
-/blog/static/8058f3f26913fea3b6a89a73344fe94a/3ac88/salty_egg.jpg 1260w,
-/blog/static/8058f3f26913fea3b6a89a73344fe94a/e1596/salty_egg.jpg 2048w&quot;
+        src=&quot;/static/8058f3f26913fea3b6a89a73344fe94a/828fb/salty_egg.jpg&quot;
+        srcset=&quot;/static/8058f3f26913fea3b6a89a73344fe94a/ff44c/salty_egg.jpg 158w,
+/static/8058f3f26913fea3b6a89a73344fe94a/a6688/salty_egg.jpg 315w,
+/static/8058f3f26913fea3b6a89a73344fe94a/828fb/salty_egg.jpg 630w,
+/static/8058f3f26913fea3b6a89a73344fe94a/0ede0/salty_egg.jpg 945w,
+/static/8058f3f26913fea3b6a89a73344fe94a/3ac88/salty_egg.jpg 1260w,
+/static/8058f3f26913fea3b6a89a73344fe94a/e1596/salty_egg.jpg 2048w&quot;
         sizes=&quot;(max-width: 630px) 100vw, 630px&quot;
         style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
         loading=&quot;lazy&quot;
